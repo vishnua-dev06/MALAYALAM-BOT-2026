@@ -43,7 +43,7 @@ async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
         buttons = [
             [
-                InlineKeyboardButton('🤖 Updates', url='https://t.me/+mhsaTvs9Ghg4NDA1')
+                InlineKeyboardButton('𝘜𝘱𝘥𝘢𝘵𝘦𝘴', url='https://t.me/+eG3gCXP5JScwYTM1')
             ],
             [
                 InlineKeyboardButton('ℹ️ Help', url=f"https://t.me/{temp.U_NAME}?start=help"),
@@ -62,10 +62,11 @@ async def start(client, message):
         await client.send_message(LOG_CHANNEL, script.LOG_TEXT_P.format(message.from_user.id, message.from_user.mention))
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚡️ 𝘈ᴅᴅ 𝘔ᴇ 𝘛ᴏ 𝘠ᴏᴜʀ 𝘎ʀᴏᴜᴩ ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('💌 Group', url='https://t.me/+mhsaTvs9Ghg4NDA1')
+            InlineKeyboardButton('📺 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 📺', url=f'https://t.me/+bfm1FSAif8QzODBl')
+        ], [
+            InlineKeyboardButton('🔥 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘎𝘳𝘰𝘶𝘱 🔥', url='https://t.me/+pYHQRcuQgRw0ZTY1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(
@@ -142,10 +143,11 @@ async def start(client, message):
             return
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('➕ 𝙰𝚍𝚍 𝙼𝚎 𝚃𝚘 𝚈𝚘𝚞𝚛 𝙶𝚛𝚘𝚞𝚙𝚜 ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
+            InlineKeyboardButton('⚡️ 𝘈ᴅᴅ 𝘔ᴇ 𝘛ᴏ 𝘠ᴏᴜʀ 𝘎ʀᴏᴜᴩ ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('🔍sᴇᴀʀᴄʜ', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('💌 Group', url='https://t.me/Cinema_Kottaka_updates')
+            InlineKeyboardButton('📺 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 📺', url=f'https://t.me/+bfm1FSAif8QzODBl')
+        ], [
+            InlineKeyboardButton('🔥 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘎𝘳𝘰𝘶𝘱 🔥', url='https://t.me/+pYHQRcuQgRw0ZTY1')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply(

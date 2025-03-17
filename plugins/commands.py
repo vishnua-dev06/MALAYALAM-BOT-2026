@@ -64,7 +64,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚡️ 𝘈ᴅᴅ 𝘔ᴇ 𝘛ᴏ 𝘠ᴏᴜʀ 𝘎ʀᴏᴜᴩ ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('📺 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 📺', url=f'https://t.me/+bfm1FSAif8QzODBl')
+            InlineKeyboardButton('📺 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 📺', url=f'https://t.me/+eG3gCXP5JScwYTM1')
         ], [
             InlineKeyboardButton('🔥 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘎𝘳𝘰𝘶𝘱 🔥', url='https://t.me/+pYHQRcuQgRw0ZTY1')
         ]]
@@ -145,7 +145,7 @@ async def start(client, message):
         buttons = [[
             InlineKeyboardButton('⚡️ 𝘈ᴅᴅ 𝘔ᴇ 𝘛ᴏ 𝘠ᴏᴜʀ 𝘎ʀᴏᴜᴩ ⚡️', url=f'http://t.me/{temp.U_NAME}?startgroup=true')
         ],[
-            InlineKeyboardButton('📺 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 📺', url=f'https://t.me/+bfm1FSAif8QzODBl')
+            InlineKeyboardButton('📺 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘜𝘱𝘥𝘢𝘵𝘦 𝘊𝘩𝘢𝘯𝘯𝘦𝘭 📺', url=f'https://t.me/+eG3gCXP5JScwYTM1')
         ], [
             InlineKeyboardButton('🔥 𝘑𝘰𝘪𝘯 𝘔𝘰𝘷𝘪𝘦 𝘙𝘦𝘲𝘶𝘦𝘴𝘵 𝘎𝘳𝘰𝘶𝘱 🔥', url='https://t.me/+pYHQRcuQgRw0ZTY1')
         ]]

@@ -37,12 +37,7 @@ async def delete_messages(client, messages):
         except Exception as e:
             print(f"Failed to delete message with ID: {msg.message_id}. Error: {e}")
 
-    if len(message.command) == 2 and message.command[1].startswith('harifile'):
-        searches = message.command[1].split("-", 1)[1] 
-        search = searches.replace('-',' ')
-        message.text = search 
-        await auto_filter(client, message) 
-        return
+
 @Client.on_message(filters.command("start") & filters.incoming)
 async def start(client, message):
     if message.chat.type in [enums.ChatType.GROUP, enums.ChatType.SUPERGROUP]:
@@ -79,7 +74,13 @@ async def start(client, message):
             reply_markup=reply_markup,
             parse_mode=enums.ParseMode.HTML
         )
-        return  
+        return
+    if len(message.command) == 2 and message.command[1].startswith('getfile'):
+        searches = message.command[1].split("-", 1)[1] 
+        search = searches.replace('-',' ')
+        message.text = search 
+        await auto_filter(client, message) 
+        return
     try:
         should_run_check_loop_sub = False
         should_run_check_loop_sub1 = False

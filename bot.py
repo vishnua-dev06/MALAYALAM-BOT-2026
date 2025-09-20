@@ -9,8 +9,8 @@ from info import SESSION, API_ID, API_HASH, BOT_TOKEN, LOG_STR, REQ_CHANNEL1, RE
 from utils import temp, load_datas
 from typing import Union, Optional, AsyncGenerator
 from pyrogram import types
-#from aiohttp import web
-#from plugins.web_support import web_server
+from aiohttp import web
+from plugins.web_support import web_server
 from dotenv import load_dotenv
 from apscheduler.schedulers.asyncio import AsyncIOScheduler
 
@@ -65,10 +65,10 @@ class Bot(Client):
             except Exception as e:
                 logging.info(f"Make Sure REQ_CHANNEL 2 ID is correct or {e}")
 
-        #app = web.AppRunner(await web_server())
-       # await app.setup()
-      #  bind_address = "0.0.0.0"
-       # await web.TCPSite(app, bind_address, PORT).start()     
+        app = web.AppRunner(await web_server())
+        await app.setup()
+        bind_address = "0.0.0.0"
+        await web.TCPSite(app, bind_address, PORT).start()     
         
         logging.info(f"{me.first_name} with for Pyrogram v{__version__} (Layer {layer}) started on {me.username}.")
         logging.info(LOG_STR)

@@ -16,6 +16,11 @@ class script(object):
 
 <b>DEVS:</b>
 - <a href=https://github.com/MrMKN>click</a>"""
+
+    CAPTION = """<b><blockquote>{file_caption}
+    
+  ꜰɪʟᴇ ɴᴀᴍᴇ :- {file_name}</b></blockquote>""" 
+    
     MANUELFILTER_TXT = """Help: <b>Filters</b>
 
 - Filter is the feature were users can set automated replies for a particular keyword and EvaMaria will respond whenever a keyword is found the message

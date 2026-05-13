@@ -35,9 +35,9 @@ AUTH_GROUPS = [int(ch) for ch in auth_grp.split()] if auth_grp else None
 # MongoDB information
 DATABASE_NAME = environ.get('DATABASE_NAME', "leo")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'leo_files')
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://flix1:flix1@cluster0.nkdcb.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://flix2:flix2@cluster0.yzov3.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://flix3:flix3@cluster0.zi1d5.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://V:V@cluster0.gfl3nbd.mongodb.net/?appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://V:V@cluster0.h75lkuo.mongodb.net/?appName=Cluster0")
+DATABASE_URI3 = environ.get('DATABASE_URI3', "mongodb+srv://V:V@cluster0.cl36wod.mongodb.net/?appName=Cluster0")
 
 # FSUB
 auth_channel = environ.get('AUTH_CHANNEL')
@@ -54,7 +54,7 @@ DELETE_TIMEOUT = int(environ.get('DELETE_TIMEOUT', 2*60*60)) # 2 hours in second
 PM_DEL = int(300)
 
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002392000389'))
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1002345584519')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1003941557887')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
 SINGLE_BUTTON = is_enabled((environ.get('SINGLE_BUTTON', "True")), True)

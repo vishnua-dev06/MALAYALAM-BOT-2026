@@ -14,7 +14,7 @@ def is_enabled(value, default):
 SESSION = environ.get('SESSION', 'Media_searcher')
 API_ID = int(environ.get('API_ID', '13305226'))
 API_HASH = environ.get('API_HASH', '8cde2475d6b0cb1162b89ebbac71a95d')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7802436962:AAHZIYgO6iCMdgqV85yQQG3dFZmtWdIO2AE')
+BOT_TOKEN = environ.get('BOT_TOKEN', '8709932798:AAF62Ah-Td1NEBdcsOUmA4LQMEFiLoVmPww')
 
 # Bot settings
 AUTO_DEL = True
@@ -53,7 +53,7 @@ DELETE_TIMEOUT = int(environ.get('DELETE_TIMEOUT', 2*60*60)) # 2 hours in second
 # Others
 PM_DEL = int(300)
 
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002392000389'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1003763910569'))
 SUPPORT_CHAT = environ.get('SUPPORT_CHAT', '-1003941557887')
 P_TTI_SHOW_OFF = is_enabled((environ.get('P_TTI_SHOW_OFF', "True")), True)
 IMDB = is_enabled((environ.get('IMDB', "False")), False)
